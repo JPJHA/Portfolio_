@@ -285,7 +285,7 @@ function showLoadingAnimation() {
     loader.className = 'loader';
     loader.innerHTML = `
         <div class="loader-content">
-            <div class="loader-logo">JPJ</div>
+            <div class="loader-logo">JP JHA</div>
             <div class="loader-text">Loading Portfolio...</div>
         </div>
     `;
