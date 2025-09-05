@@ -279,29 +279,17 @@ function createParticles() {
     }
 }
 
-// Loading animation
+// Smooth animated loading screen
 function showLoadingAnimation() {
     const loader = document.createElement('div');
     loader.className = 'loader';
     loader.innerHTML = `
         <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
             <div class="loader-logo">JPJ</div>
-            <div class="loader-text">Loading Portfolio...</div>
         </div>
-    `;
-    
-    loader.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--bg-primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
     `;
     
     document.body.appendChild(loader);
@@ -309,11 +297,11 @@ function showLoadingAnimation() {
     // Hide loader after page loads
     window.addEventListener('load', () => {
         setTimeout(() => {
-            loader.style.opacity = '0';
+            loader.classList.add('hidden');
             setTimeout(() => {
                 loader.remove();
-            }, 500);
-        }, 1000);
+            }, 800);
+        }, 1500);
     });
 }
 

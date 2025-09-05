@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Run Portfolio</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #8b5cf6 75%, #d97706 100%);
+            color: white;
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .method {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            text-align: left;
+        }
+        .method h3 {
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+        .code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 0.5rem 0;
+            border-left: 3px solid #3b82f6;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .note {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Portfolio Website</h1>
+        <p>Jay Prakash Jha - AI Engineer Portfolio</p>
+        
+        <div class="method">
+            <h3>Method 1: Direct Open (Easiest)</h3>
+            <p>Simply double-click on <strong>index.html</strong> to open in your default browser.</p>
+            <div class="code">index.html</div>
+        </div>
+
+        <div class="method">
+            <h3>Method 2: Local Server (Recommended)</h3>
+            <p>For best performance and to avoid CORS issues:</p>
+            
+            <h4>Using Python:</h4>
+            <div class="code">python -m http.server 8000</div>
+            <p>Then open: <strong>http://localhost:8000</strong></p>
+            
+            <h4>Using Node.js:</h4>
+            <div class="code">npx serve .</div>
+            <p>Then open the provided URL</p>
+            
+            <h4>Using PHP:</h4>
+            <div class="code">php -S localhost:8000</div>
+            <p>Then open: <strong>http://localhost:8000</strong></p>
+        </div>
+
+        <div class="method">
+            <h3>Method 3: VS Code Live Server</h3>
+            <p>If using VS Code:</p>
+            <ol>
+                <li>Install "Live Server" extension</li>
+                <li>Right-click on index.html</li>
+                <li>Select "Open with Live Server"</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> Use Method 2 (Local Server) for the best experience with all features working properly.
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="index.html" class="btn">🎯 Open Portfolio</a>
+            <a href="README.md" class="btn">📖 View Documentation</a>
+        </div>
+
+        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+            <p>✨ Features: Dark/Light Mode • 3D Animations • Responsive Design • Glassmorphic UI</p>
+        </div>
+    </div>
+</body>
+</html>
